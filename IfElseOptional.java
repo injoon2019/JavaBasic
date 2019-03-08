@@ -4,7 +4,7 @@ class ContInfo{
 
 	public ContInfo(String ph, String ad){
 		phone = ph;
-		adrs =ad;
+		adrs = ad;
 	}
 	public String getPhone(){return phone;}
 	public String getAdrs(){return adrs;}
@@ -15,13 +15,13 @@ class IfElseOptional{
 		ContInfo ci = new ContInfo(null, "Republic of Korea");
 		String phone;
 		String addr;
-
-		if (ci.phone !=null)
+		
+		if(ci.phone!=null)
 			phone = ci.getPhone();
 		else
-			phone  = "There is no phone number";
-		
-		if(ci.adrs!=null)
+			phone = "There is no phone number";
+
+		if(ci.adrs != null)
 			addr = ci.getAdrs();
 		else
 			addr = "There is no address";
